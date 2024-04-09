@@ -1,0 +1,9 @@
+[supervisord]
+nodaemon=true
+
+[program:node]
+directory=/usr/share/nginx/html
+command=/usr/bin/node index.js
+
+[program:nginx]
+command=/usr/sbin/nginx -g "daemon off;"
